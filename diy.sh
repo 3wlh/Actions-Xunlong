@@ -3,7 +3,7 @@
 shopt -s extglob
 
 sed -i '/$(curdir)\/compile:/c\$(curdir)/compile: package/opkg/host/compile' package/Makefile
-sed -i "s/DEFAULT_PACKAGES:=/DEFAULT_PACKAGES:=luci-base luci-app-firewall luci-app-opkg luci-app-upnp \
+sed -i "s/DEFAULT_PACKAGES:=/DEFAULT_PACKAGES:=luci luci-base luci-app-firewall luci-app-opkg luci-app-upnp \
 luci-compat luci-lib-ipkg luci-lib-fs \
 coremark wget-ssl curl autocore htop nano zram-swap kmod-lib-zstd kmod-tcp-bbr bash openssh-sftp-server block-mount resolveip ds-lite swconfig luci-app-fan /" include/target.mk
 
